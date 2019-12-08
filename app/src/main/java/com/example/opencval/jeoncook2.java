@@ -159,11 +159,15 @@ public class jeoncook2 extends AppCompatActivity
 
         if((beforered-25)<=red && red<=(beforered+25) && (beforegreen-25)<= green &&green<=(beforegreen+25) && (beforeblue-25)<=blue && blue <=(beforeblue+25)){
             Intent intent = new Intent(jeoncook2.this, jeoncomplete.class);
+            intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
 
         if((nextred-25)<=redb && redb<=(nextred+25) && (nextgreen-25)<= greenb &&greenb<=(nextgreen+25) && (nextblue-25)<=blueb && blueb <=(nextblue+25)){
             Intent intent = new Intent(jeoncook2.this, jeoncook1.class);
+            intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
 

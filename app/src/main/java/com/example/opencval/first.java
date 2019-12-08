@@ -92,6 +92,8 @@ public class first extends AppCompatActivity    implements CameraBridgeViewBase.
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(first.this,categoryselect.class);
+                intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

@@ -136,9 +136,6 @@ public class jeoncook1 extends AppCompatActivity
 
         matInput = inputFrame.rgba();
 
-        int c = matInput.cols();
-        int r = matInput.rows();
-
         double[] a = matInput.get(5,128);
         double[] b = matInput.get(135,128);
 
@@ -159,6 +156,8 @@ public class jeoncook1 extends AppCompatActivity
 
         if((beforered-25)<=red && red<=(beforered+25) && (beforegreen-25)<= green &&green<=(beforegreen+25) && (beforeblue-25)<=blue && blue <=(beforeblue+25)){
             Intent intent = new Intent(jeoncook1.this, jeoncook2.class);
+            intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
 

@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".second">
 
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/activity_surface_view"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="20dp"
+        android:rotation="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
@@ -13,14 +24,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-
-        <org.opencv.android.JavaCameraView
-            android:id="@+id/activity_surface_view"
-            android:layout_width="100dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right|top"
-            android:layout_marginBottom="72dp"
-            android:rotation="0" />
 
         <ImageView
             android:id="@+id/imageView4"

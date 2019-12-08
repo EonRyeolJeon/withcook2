@@ -7,6 +7,9 @@
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.front.autofocus"  android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <supports-screens android:resizeable="true"
         android:smallScreens="true"
@@ -40,6 +43,83 @@
         <activity android:name=".jeoncook1"></activity>
         <activity android:name=".jeoncook2"></activity>
         <activity android:name=".jeonfirst"></activity>
+        <activity android:name=".first"></activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".SignUpActivity">
+        </activity>
+        <activity android:name=".WritePostActivity">
+        </activity>
+        <activity android:name=".PostInfo">
+        </activity>
+        <activity android:name=".GalleryActivity">
+        </activity>
+        <activity android:name=".GalleryAdapter">
+        </activity>
+        <activity android:name=".BasicActivity">
+        </activity>
+        <activity android:name=".MemberInfo">
+        </activity>
+        <activity android:name=".CameraActivity">
+        </activity>
+        <activity android:name=".Camera2BasicFragment">
+        </activity>
+        <activity android:name=".MemberInitActivity">
+        </activity>
+        <activity android:name=".Util">
+        </activity>
+        <activity android:name=".PasswordResetActivity">
+        </activity>
+        <activity android:name=".PostActivity">
+        </activity>
+        <activity android:name=".FirebaseHelper">
+        </activity>
+        <activity android:name=".UserInfoFragment">
+        </activity>
+        <activity android:name=".UserInfo">
+        </activity>
+        <activity android:name=".UserListAdapter">
+        </activity>
+        <activity android:name=".UserListFragment">
+        </activity>
+        <activity android:name=".HomeAdapter">
+        </activity>
+        <activity android:name=".PostFragment">
+        </activity>
+        <activity android:name=".AddPostActivity">
+        </activity>
+
+        <activity android:name=".AddPostActivity2">
+        </activity>
+        <activity android:name=".AddPostActivity3">
+        </activity>
+        <activity android:name=".AddPostActivity4">
+        </activity>
+        <activity android:name=".AddPostActivity5">
+        </activity>
+        <activity android:name=".AddPostActivity6">
+        </activity>
+        <activity android:name=".AddPostActivity7">
+        </activity>
+        <activity android:name=".AddPostActivity8">
+        </activity>
+        <activity android:name=".AddPostActivity9">
+        </activity>
+        <activity android:name=".AddPostActivity10">
+        </activity>
+        <activity android:name=".WritePostMain">
+        </activity>
+        <activity android:name=".Review_WriteActivity">
+        </activity>
+        <activity android:name=".ReviewActivity">
+        </activity>
+        <activity android:name=".firemain"></activity>
+        <activity android:name=".NextPage" />
+        <activity android:name=".NextPage5" />
+        <activity android:name=".NextPage4" />
+        <activity android:name=".NextPage3" />
+        <activity android:name=".NextPage2" />
+        <activity android:name=".MainActivity_sdj"></activity>
 
     </application>
 

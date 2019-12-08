@@ -24,6 +24,8 @@ public class jeoncomplete extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(jeoncomplete.this,jeonfirst.class);
+                intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
@@ -33,6 +35,8 @@ public class jeoncomplete extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(jeoncomplete.this,categoryselect.class);
+                intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
